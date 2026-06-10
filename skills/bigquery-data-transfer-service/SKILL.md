@@ -1,13 +1,14 @@
 ---
 name: bigquery-data-transfer-service
-description: >-
-  Discovers and inspects BigQuery Data Transfer Service (DTS) configurations.
-  Use this to identify existing ingestion pipelines and extract datasource or
-  transfer config metadata for data pipelines. Use when a user asks for
-  ingestion scenarios while building or managing data pipelines or when a user asks to "ingest" or "add" data that may
-  already be managed by a DTS transfer.
+description: Discovers and inspects BigQuery Data Transfer Service (DTS) configurations.
+  Use this to identify existing ingestion pipelines and extract datasource or transfer
+  config metadata for data pipelines. Use when a user asks for ingestion scenarios
+  while building or managing data pipelines or when a user asks to "ingest" or "add"
+  data that may already be managed by a DTS transfer.
+license: Apache-2.0
 metadata:
   version: v1
+  publisher: google
 ---
 
 # BigQuery Data Transfer Service (DTS)
@@ -96,10 +97,10 @@ and validate them with the user.
 > If `<DATA_SOURCE_ID>` is unknown, run the discovery script without
 > `<DATA_SOURCE_ID>` argument to list available source IDs (e.g.,
 > `google_cloud_storage`). It uses the derived project and location from Step 0.
-
-```bash
-python3 scripts/bigquery_dts.py --project_id=<PROJECT_ID>
-```
+>
+> ```bash
+> python3 scripts/bigquery_dts.py --project_id=<PROJECT_ID>
+> ```
 
 1.  **Run Discovery Script**: Use the `bigquery_dts.py` script to inspect Data
     Source parameters via the REST API.

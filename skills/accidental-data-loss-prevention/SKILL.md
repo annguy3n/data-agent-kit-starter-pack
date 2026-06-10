@@ -7,8 +7,10 @@ description: |
   - SQL: DROP TABLE/VIEW/SCHEMA/DATABASE, TRUNCATE, or broad DELETE (missing WHERE or using 1=1).
   - Cloud Storage: gsutil rm or gcloud storage rm targeting production data or critical buckets.
   - Infrastructure: gcloud projects delete, deleting Spanner/BigQuery/Dataproc resources, deleting secrets, or KMS key destruction.
+license: Apache-2.0
 metadata:
   version: v1
+  publisher: google
 ---
 
 # Accidental Data Loss Prevention
@@ -27,3 +29,4 @@ metadata:
     -   A request for their **explicit approval** to proceed.
 3.  **Wait**: Only proceed if the user provides clear, affirmative consent in
     the conversation.
+

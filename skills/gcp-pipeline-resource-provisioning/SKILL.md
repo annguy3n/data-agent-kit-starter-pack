@@ -12,8 +12,10 @@ description: |
   - Managing general cloud infrastructure (VMs, networks, Kubernetes, IAM policies), which are better suited for Terraform.
   - Infrastructure spans multiple cloud providers (AWS, Azure, etc.).
   - Already uses Terraform for the target resources.
+license: Apache-2.0
 metadata:
   version: v1
+  publisher: google
 ---
 
 ## How to use this skill
