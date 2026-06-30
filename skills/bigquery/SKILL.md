@@ -9,8 +9,9 @@ description: |
     4. Graph Analytics (GQL & Property Graphs)
 license: Apache-2.0
 metadata:
-  version: v3
+  version: v4
   publisher: google
+
 ---
 
 This skill provides comprehensive guidance for BigQuery services, optimizations,
@@ -29,12 +30,14 @@ features:
 
 Performance and efficiency guidelines for BigQuery SQL. Includes rules for
 column pruning, pushdown, and materialization strategies.
+
 - **Guide**: [OPTIMIZATION.md](references/sql/OPTIMIZATION.md)
 
 ### 2. BigFrames (BigQuery DataFrames)
 
 Guidelines for generating valid BigFrames code for data manipulation, model
 development, and visualization.
+
 - **Guide**: [BIGFRAMES.md](references/bigframes/BIGFRAMES.md)
 
 Bigframes should be the default library/tool as it is more efficient than using
@@ -44,6 +47,7 @@ the BigQuery Python client library.
 
 Usage rules and syntax standards for all BigQuery AI/ML functions via SQL
 (Forecasting, Generative AI, Classification, etc.).
+
 - **Best Practices**: [ai_function_best_practices.md](references/ai-ml/ai_function_best_practices.md)
 - **Functions Reference**:
 
@@ -66,5 +70,10 @@ Usage rules and syntax standards for all BigQuery AI/ML functions via SQL
 ### 4. Graph Analytics (Property Graphs & GQL)
 
 Guidelines and best practices for querying property graphs in BigQuery.
+
 - **Property Graph Guidelines**: [graph_queries.md](references/graph/graph_queries.md) - Standard GQL syntax and query patterns.
 - **Semantic Graph Guidelines**: [semantic_queries.md](references/graph/semantic_queries.md) - Semantic graph operations and expand functions.
+-   **Graph Schema DDL Advisor**:
+    [graph_schema_ddl_advisor.md](references/graph/graph-schema/graph_schema_ddl_advisor.md)
+    -   Assists in defining, correcting, and optimizing BigQuery Property Graph
+        and Semantic Graph schemas.
