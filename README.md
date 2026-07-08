@@ -3,7 +3,7 @@
 > [!NOTE]
 > This extension is currently in beta (pre-v1.0), and may see breaking changes until the first stable release (v1.0).
 
-This plugin provides a specialized suite of skills and MCP tools for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across the Google Cloud data ecosystem (BigQuery, Spanner, BigLake, Dataproc, etc.).
+This plugin provides a specialized suite of skills and MCP tools for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, create and troubleshoot Dataflow pipelines, and orchestrate end-to-end workflows across the Google Cloud data ecosystem (BigQuery, Spanner, BigLake, Dataproc, etc.).
 
 > [!IMPORTANT]
 > **We Want Your Feedback!**
@@ -23,7 +23,7 @@ This plugin provides a specialized suite of skills and MCP tools for data engine
 ## Why Use the Data Agent Kit Starter Pack?
 
 * **Seamless Workflow:** Bring Google Cloud data engineering expertise directly into your terminal or IDE via Gemini CLI, Claude Code, or Codex.
-* **End-to-End Data Pipelines:** Effortlessly generate code that reads raw data from Cloud Storage, processes it with Spark or BigQuery, transform it through medallion architectures (bronze, silver, gold) using dbt, and export it to serving layers like Spanner.
+* **End-to-End Data Pipelines:** Effortlessly generate code that reads raw data from Cloud Storage, processes it with Spark, Dataflow or BigQuery, transforms it through medallion architectures (bronze, silver, gold) using dbt, and exports it to serving layers like Spanner.
 * **Ecosystem Integration:** Work across boundaries—generate BigLake Iceberg catalog tables, train BigQuery ML models (XGBoost, KMEANS), and create interactive Streamlit dashboards or LookML models, all from natural language.
 * **Workflow Orchestration:** Automatically create and schedule orchestration pipelines that tie your notebooks and dbt models together into robust, scheduled jobs.
 
