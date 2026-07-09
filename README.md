@@ -79,6 +79,23 @@ Run the `claude` command to start the agent, then follow these steps:
 <details>
 <summary><b>Codex</b></summary>
 
+#### Option 1: Marketplace Installation (Recommended)
+
+Codex utilizes a marketplace system for plugins. Install the Data Agent Kit Starter Pack marketplace to access the plugin:
+
+```bash
+# Step 1. Add marketplace
+codex plugin marketplace add https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack
+
+# Step 2. Install the plugin
+codex plugin install dak@data-agent-kit-starter-pack
+
+# Optional. Update the marketplace
+codex plugin marketplace upgrade data-agent-kit-starter-pack
+```
+
+#### Option 2: Script Installation (Alternative)
+
 1. **Run the installation script in your terminal:**
 
 **macOS / Linux:**
