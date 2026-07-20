@@ -171,7 +171,7 @@
         "SERVERLESS_SPARK_LOCATION": "$GCP_REGION"
       }
     },
-    "datacloud_bigtable_toolbox": {
+    "bigtable": {
       "command": "npx",
       "args": [
         "-y",
@@ -183,8 +183,8 @@
         "datacloud.gemini-cli"
       ],
       "env": {
-        "BIGTABLE_PROJECT": "",
-        "BIGTABLE_INSTANCE": ""
+        "BIGTABLE_PROJECT": "$PROJECT_ID",
+        "BIGTABLE_INSTANCE": "$BIGTABLE_INSTANCE"
       }
     }
   },
@@ -203,6 +203,11 @@
       "name": "BigQuery Location",
       "description": "Location for BigQuery datasets (e.g. US)",
       "envVar": "BIGQUERY_LOCATION"
+    },
+    {
+      "name": "Bigtable Instance",
+      "description": "ID of the GCP Bigtable Instance",
+      "envVar": "BIGTABLE_INSTANCE"
     }
   ]
 }
